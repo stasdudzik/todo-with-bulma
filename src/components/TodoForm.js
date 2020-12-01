@@ -22,9 +22,13 @@ class TodoForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form
+        style={{ display: "flex", alignItems: "center" }}
+        onSubmit={this.handleSubmit}
+        class="mb-5"
+      >
         <input
-          class="input is-small"
+          class="input is-big"
           name="text"
           value={this.state.text}
           onChange={this.handleChange}
