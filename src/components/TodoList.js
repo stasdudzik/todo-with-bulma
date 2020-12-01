@@ -1,6 +1,8 @@
 import React from "react";
+
 import TodoForm from "./TodoForm";
 import Todo from "./Todo";
+
 /*
 Todo Model Viever Controller
 1. add Todo
@@ -92,20 +94,36 @@ class TodoList extends React.Component {
         <div>
           todos left: {this.state.todos.filter((todo) => !todo.complete).length}
         </div>
-        <button onClick={() => this.updateTodoToShow("all")}>all</button>
-        <button onClick={() => this.updateTodoToShow("active")}>active</button>
-        <button onClick={() => this.updateTodoToShow("complete")}>
+        <button
+          class="button is-link is-light"
+          onClick={() => this.updateTodoToShow("all")}
+        >
+          all
+        </button>
+        <button
+          class="button is-link is-light"
+          onClick={() => this.updateTodoToShow("active")}
+        >
+          active
+        </button>
+        <button
+          class="button is-link is-light"
+          onClick={() => this.updateTodoToShow("complete")}
+        >
           complete
         </button>
         {this.state.todos.some((todo) => todo.complete) ? (
           <div>
-            <button onClick={this.removeAllTodoThatAreComplete}>
+            <button
+              class="button is-danger"
+              onClick={this.removeAllTodoThatAreComplete}
+            >
               remove all complete todos
             </button>
           </div>
         ) : null}
         <div>
-          <button onClick={() => this.toggleAll()}>
+          <button class="button is-warning" onClick={() => this.toggleAll()}>
             toggle all: {`${this.state.toggleAllComplete}`}
           </button>
         </div>

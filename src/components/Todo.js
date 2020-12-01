@@ -8,6 +8,8 @@ export default (props) => (
     >
       {props.todo.text}
     </div>
-    <button onClick={props.onDelete}>x</button>
+    <button class="button is-danger" onClick={props.onDelete}>
+      x
+    </button>
   </div>
 );

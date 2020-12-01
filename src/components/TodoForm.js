@@ -24,12 +24,15 @@ class TodoForm extends React.Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <input
+          class="input is-small"
           name="text"
           value={this.state.text}
           onChange={this.handleChange}
           placeholder="Something todo..."
         />
-        <button onClick={this.handleChangeSubmit}>add todo</button>
+        <button class="button is-success" onClick={this.handleChangeSubmit}>
+          add todo
+        </button>
       </form>
     );
   }
