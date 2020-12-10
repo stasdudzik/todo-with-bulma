@@ -32,10 +32,10 @@ class TodoForm extends React.Component {
           name="text"
           value={this.state.text}
           onChange={this.handleChange}
-          placeholder="Something todo..."
+          placeholder="Add something to do..."
         />
         <button class="button is-success" onClick={this.handleChangeSubmit}>
-          add todo
+          add item
         </button>
       </form>
     );

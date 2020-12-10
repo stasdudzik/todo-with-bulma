@@ -126,18 +126,18 @@ class TodoList extends React.Component {
                 class="button is-danger"
                 onClick={this.removeAllTodoThatAreComplete}
               >
-                remove all complete todos
+                remove all complete items
               </button>
             </div>
           ) : null}
           <div>
             <button class="button is-warning" onClick={() => this.toggleAll()}>
-              toggle all: {`${this.state.toggleAllComplete}`}
+              toggle all: {this.state.toggleAllComplete ? "complete" : "active"}
             </button>
           </div>
         </div>
         <div>
-          todos left: {this.state.todos.filter((todo) => !todo.complete).length}
+          items left: {this.state.todos.filter((todo) => !todo.complete).length}
         </div>
       </div>
     );
