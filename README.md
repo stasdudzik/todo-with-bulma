@@ -1,6 +1,6 @@
 # Todo list
 
-![screen of an app](https://github.com/stasdudzik/todo-with-bulma/blob/main/public/view.png)
+![screen of an app](https://github.com/stasdudzik/todo-with-bulma/blob/master/public/view.png)
 
 allows you to create and update a list of todos
 
