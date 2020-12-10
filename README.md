@@ -1,5 +1,7 @@
 # Todo list
 
+this app was inspired by Ben Awad's series "Practical React"
+
 ![screen of an app](https://github.com/stasdudzik/todo-with-bulma/blob/master/public/view.png)
 
 - create and update a list of todos
