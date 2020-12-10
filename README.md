@@ -2,13 +2,13 @@
 
 ![screen of an app](https://github.com/stasdudzik/todo-with-bulma/blob/master/public/view.png)
 
-allows you to create and update a list of todos
+- create and update a list of todos
 
-counter for todos left
+- counter for todos left
 
-filtering todos
+- filtering todos
 
-firebase integration for persisting the list on a refresh
+- app uses local storage persisting the list on a refresh
 
 The App was started with [Create React App](https://github.com/facebook/create-react-app)
 
