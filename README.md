@@ -19,3 +19,5 @@ todolist requires:
 ### [styled-components](https://github.com/styled-components/styled-components) for styling
 
 ### [bulma](https://bulma.io/) for some easy to use styled elements
+
+### [shortid](https://github.com/dylang/shortid#readme) for generating todos' id
