@@ -5,10 +5,25 @@ import Todo from "./Todo";
 
 class TodoList extends React.Component {
   state = {
+    key: "xtb5$32",
     todos: [],
     todoToShow: "all",
     toggleAllComplete: true,
   };
+
+  componentDidMount() {
+    document.title = "📝ToDoList";
+    const localStorageRef = localStorage.getItem(this.state.key);
+    console.log(localStorageRef);
+
+    if (localStorageRef) {
+      this.setState({ todos: JSON.parse(localStorageRef) });
+    }
+  }
+
+  componentDidUpdate() {
+    localStorage.setItem(this.state.key, JSON.stringify(this.state.todos));
+  }
 
   addTodo = (todo) => {
     this.setState({
