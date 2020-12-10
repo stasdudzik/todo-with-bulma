@@ -1,21 +1,33 @@
 import React from "react";
+import styled from "styled-components";
+
+const Container = styled.div`
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 3fr 1fr;
+`;
+
+const Todo = styled.div`
+  background: #343744;
+  border-radius: 10px;
+  padding: 4px;
+  margin-bottom: 4px;
+`;
 
 export default (props) => (
-  <div
-    style={{
-      display: "grid",
-      justifyItems: "center",
-      gridTemplateColumns: "4fr 1fr",
-    }}
-  >
-    <div
-      style={{ textDecoration: props.todo.complete ? "line-through" : "none" }}
+  <Container>
+    <Todo
+      style={{
+        textDecoration: props.todo.complete ? "line-through" : "none",
+        color: props.todo.complete ? "#f14668" : "white",
+      }}
       onClick={props.toggleComplete}
     >
       {props.todo.text}
-    </div>
+    </Todo>
     <button class="button is-danger is-small" onClick={props.onDelete}>
-      x
+      &#10799;
     </button>
-  </div>
+  </Container>
 );
